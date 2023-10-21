@@ -77,3 +77,9 @@ p {
   align-items: center;
   justify-content: space-between;
 }
+
+.button-primary a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
