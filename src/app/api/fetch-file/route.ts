@@ -14,6 +14,10 @@ export async function GET(req: NextRequest) {
   if (!_fileExists) return NOT_FOUND;
 
   const getResult = await getFile(hash);
+
+  // more likely than not an infra issue, but this should do
+  if (!getResult) return NOT_FOUND;
+
   const files = await getResult.files();
   const file: File = files[0];
 
