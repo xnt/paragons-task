@@ -12,7 +12,7 @@ const WalletDataDisplay = ({
   mainToken,
 }: WalletDataDisplayProps) => {
   return (
-    <div>
+    <div className="-z-10">
       <div className="px-4 mt-3">
         <h3 className="text-base font-semibold leading-7 text-gray-900">
           Connected Wallet Information
