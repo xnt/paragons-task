@@ -22,6 +22,8 @@ const RetreiveFilePage = () => {
     setLoading(true);
 
     try {
+      // https://github.com/vercel/next.js/discussions/55027
+      // this is a bug in nextjs 🤷‍♂️ only happens on the Vercel deployment
       // const fileExists = await fetch(`/api/query-file?hash=${hash}`);
       // if (fileExists.status === 404) {
       //   setError("File does not exist. Check your hash.");
