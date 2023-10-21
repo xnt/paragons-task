@@ -8,7 +8,7 @@ const CheckBalancePage = () => {
   return (
     <DynamicContextProvider
       settings={{
-        environmentId: "29301546-e6a3-46f6-b2cb-3fc630181179",
+        environmentId: "76f95615-ef36-463c-8fb0-b1ec52614ea1",
       }}
     >
       <DynamicWagmiConnector>
