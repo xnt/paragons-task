@@ -27,10 +27,6 @@ const RetreiveFilePage = () => {
         setError("File does not exist. Check your hash.");
         return;
       }
-      if (!fileExists.ok) {
-        setError("An error occurred when fetching file info. Check your hash.");
-        return;
-      }
 
       window.open(`/api/fetch-file?hash=${hash}`, "_blank");
     } catch (error: any) {

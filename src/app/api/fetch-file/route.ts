@@ -29,7 +29,6 @@ export async function GET(req: NextRequest) {
       mimeType = "application/octet-stream";
     }
   }
-  console.log({ fileResult: getResult });
 
   return new NextResponse(stream, {
     status: 200,
