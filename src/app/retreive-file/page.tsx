@@ -22,11 +22,11 @@ const RetreiveFilePage = () => {
     setLoading(true);
 
     try {
-      const fileExists = await fetch(`/api/query-file?hash=${hash}`);
-      if (fileExists.status === 404) {
-        setError("File does not exist. Check your hash.");
-        return;
-      }
+      // const fileExists = await fetch(`/api/query-file?hash=${hash}`);
+      // if (fileExists.status === 404) {
+      //   setError("File does not exist. Check your hash.");
+      //   return;
+      // }
 
       window.open(`/api/fetch-file?hash=${hash}`, "_blank");
     } catch (error: any) {
