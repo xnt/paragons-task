@@ -2,7 +2,7 @@ import { Web3Storage, File as Web3FileWrapper } from "web3.storage";
 
 const getClient = () => {
   const apiToken = process.env.WEB3_STORAGE_API_TOKEN;
-  return new Web3Storage({ token: apiToken });
+  return new Web3Storage({ token: apiToken! });
 };
 
 export const uploadFile = async (file: File) => {
